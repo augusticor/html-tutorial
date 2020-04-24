@@ -1,0 +1,43 @@
+form {
+    margin-left: 50px;
+    margin-top: 60px;
+    width: 30%;
+}
+
+.labelin {
+    display: flex;
+    margin-top: 30px;
+    margin-bottom: 50px;
+}
+
+input, abbr, select {
+    margin-left: 10px;
+}
+
+abbr {
+    color: red;
+}
+
+.fieldsett {
+    margin-bottom: 50px;
+}
+
+.hobbies-field label, #labl {
+    display: block;
+} 
+
+button {
+    background-color: royalblue;
+    color: white;
+    font-size: 20px;
+    border: none;
+    width: 30%;
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+button:hover {
+    background-color: mediumpurple;
+}

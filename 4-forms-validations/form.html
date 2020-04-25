@@ -1,10 +1,11 @@
 <!DOCTYPE html>
 <html lang="en">
+
     <head>
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <meta name="author" content="augusticor" />
-        <link rel="stylesheet" href="formStyles.css">
+        <link rel="stylesheet" href="form-styles.css">
         <title>First form validation</title>
     </head>
 
@@ -14,30 +15,32 @@
         </header>
 
         <form id="form" action="">
-            <fieldset>
+            <fieldset class="fieldsett">
                 <legend>Personal Information</legend>
                 <label for="first_name" class="labelin">
-                    First name : <input type="text" name="firstName" id="first_name" minlength="3" placeholder="your first name" required />
+                    First name : <input type="text" name="firstName" id="first_name" minlength="3"
+                        placeholder="your first name" required />
                     <abbr title="this is required, min length 3" aria-label="required">*</abbr>
                 </label>
 
                 <label for="last_name" class="labelin">
-                    Last name : <input type="text" name="lastName" id="last_name" minlength="4" placeholder="your last name" required />
+                    Last name : <input type="text" name="lastName" id="last_name" minlength="4" placeholder="your last name"
+                        required />
                     <abbr title="this is required, min length 4" aria-label="required">*</abbr>
                 </label>
-                
+
                 <label for="email" class="labelin">
                     Email : <input type="email" name="email" id="email" placeholder="astrid@example.com" required />
                     <abbr title="this is required, min length 6" aria-label="required">**</abbr>
                 </label>
-                
+
                 <label for="birth_date" class="labelin">
                     Birthdate : <input type="date" name="birthDate" id="birth_date" required />
                     <abbr title="required" aria-label="required">*</abbr>
                 </label>
 
                 <label for="gender" class="labelin">
-                    Gender: 
+                    Gender:
                     <select name="gender" id="gender" required>
                         <option value="">--Please choose an option--</option>
                         <option value="female">Female</option>
@@ -45,65 +48,65 @@
                     </select>
                     <abbr title="required" aria-label="required">*</abbr>
                 </label>
-                
-                <fieldset class="fieldsett">
-                    <legend>SES (Socioeconomic Status) <abbr title="required" aria-label="required">* </abbr></legend>
-                    <input type="radio" name="radio" id="a" value="NSE A">
-                    <label for="a">NSE A</label>
-                    <input type="radio" name="radio" id="b" value="NSE B">
-                    <label for="a">NSE B</label>
-                    <input type="radio" name="radio" id="c" value="NSE C" checked>
-                    <label for="a">NSE C</label>
-                    <input type="radio" name="radio" id="d" value="NSE D">
-                    <label for="a">NSE D</label>
-                    <input type="radio" name="radio" id="e" value="NSE E">
-                    <label for="a">NSE E</label>
-                </fieldset>
+            </fieldset>
 
-                <fieldset class="hobbies-field">
-                    <legend>Your Hobbies <abbr title="required" aria-label="required">* </abbr></legend>
-                    <label for="vg">
-                        <input type="checkbox" name="videoGames" id="vg" checked> Playing video games
-                    </label>
+            <fieldset class="fieldsett">
+                <legend>SES (Socioeconomic Status) <abbr title="required" aria-label="required">* </abbr></legend>
+                <label for="a">NSE A</label>
+                <input type="radio" name="radio" id="a" value="NSE A">
+                <label for="b">NSE B</label>
+                <input type="radio" name="radio" id="b" value="NSE B">
+                <label for="c">NSE C</label>
+                <input type="radio" name="radio" id="c" value="NSE C" checked>
+                <label for="d">NSE D</label>
+                <input type="radio" name="radio" id="d" value="NSE D">
+                <label for="e">NSE D</label>
+                <input type="radio" name="radio" id="e" value="NSE E">
+            </fieldset>
 
-                    <label for="read">
-                        <input type="checkbox" name="reading" id="read"> Reading
-                    </label>
-
-                    <label for="tv">
-                        <input type="checkbox" name="watchTV" id="tv"> Watching T.V.
-                    </label>
-
-                    <label for="family">
-                        <input type="checkbox" name="familyT" id="family"> Family Time
-                    </label>
-
-                    <label for="movi">
-                        <input type="checkbox" name="goingM" id="movi"> Going to Movies
-                    </label>
-
-                    <label for="exercise">
-                        <input type="checkbox" name="exercise" id="exercise"> Exercise
-                    </label>
-
-                    <label for="sleeping">
-                        <input type="checkbox" name="sleeping" id="sleeping"> Sleeping
-                    </label>
-
-                    <label for="billiard">
-                        <input type="checkbox" name="billiards" id="billiard"> Billiards
-                    </label>
-                </fieldset>
-
-                <label for="file-chooser" class="labelin" id="labl">
-                    Profile picture :
-                    <input type="file" name="fileChooser" id="file-chooser" required>
-                    <abbr title="required" aria-label="required">*</abbr>
+            <fieldset class="hobbies-field">
+                <legend>Your Hobbies <abbr title="required" aria-label="required">* </abbr></legend>
+                <label for="vg">
+                    <input type="checkbox" name="videoGames" id="vg" checked> Playing video games
                 </label>
 
-                <button type="submit">Submit</button>
+                <label for="read">
+                    <input type="checkbox" name="reading" id="read"> Reading
+                </label>
+
+                <label for="tv">
+                    <input type="checkbox" name="watchTV" id="tv"> Watching T.V.
+                </label>
+
+                <label for="family">
+                    <input type="checkbox" name="familyT" id="family"> Family Time
+                </label>
+
+                <label for="movi">
+                    <input type="checkbox" name="goingM" id="movi"> Going to Movies
+                </label>
+
+                <label for="exercise">
+                    <input type="checkbox" name="exercise" id="exercise"> Exercise
+                </label>
+
+                <label for="sleeping">
+                    <input type="checkbox" name="sleeping" id="sleeping"> Sleeping
+                </label>
+
+                <label for="billiard">
+                    <input type="checkbox" name="billiards" id="billiard"> Billiards
+                </label>
             </fieldset>
+
+            <label for="file-chooser" class="labelin" id="labl">
+                Profile picture :
+                <input type="file" name="fileChooser" id="file-chooser" required>
+                <abbr title="required" aria-label="required">*</abbr>
+            </label>
+
+            <button type="submit">Submit</button>
         </form>
-        
+
     </body>
 </html>

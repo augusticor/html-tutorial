@@ -5,12 +5,12 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <meta name="author" content="augusticor">
         <link rel="stylesheet" href="styles.css">
-        <title>Document</title>
+        <title>Accessible Form Validation</title>
     </head>
 
     <body>
-        <form action="">
-            <fieldset>
+        <form>
+            <fieldset>  
                 <legend>Please enter your contact details</legend>
                 <label for="name">
                     Your name: <input type="text" name="name-txt" id="name" placeholder="your name" required />
@@ -51,7 +51,7 @@
             <textarea name="textarea" id="texta" cols="60" rows="10" aria-label="optional message"></textarea>
 
             <div>
-                <button type="submit">Send message</button>
+                <button>Send message</button>
                 <button type="reset">Reset form</button>
             </div>
         </form>    

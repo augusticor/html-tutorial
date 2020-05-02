@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta name="robots" content="index" />
+        <meta name="description" content="Final project from HTML tutorial by PushDev, correct semantic-html, accessibility and form validations">
+        <meta name="keywords" content="html tutorial, seo project, form validation">
+
+        <meta name="og:title" property="og:title" content="Seo and form validation PushDev">
+        <meta name="og:description" property="og:description" content="SEO and form validation project from PushDev tutorial">
+        <meta name="twitter:card" content="summary">
+
+        <link rel="icon" type="image/png" href="favicon.png" sizes="256x256"/>
+
+        <title>HTML form validation and good SEO project hosted on Github pages</title>
+    </head>
+    
+    <body>
+        <header>
+            <h1>Final exercise form validation and SEO basics</h1>
+            <nav>
+                <h2>What content was covered in this course module?</h2>
+                <ul>
+                    <li>SEO basics</li>
+                    <li>Form validations</li>
+                    <li>Github pages</li>
+                    <li>Accessibility</li>
+                </ul>
+            </nav>
+        </header>
+
+        <main>
+            <article>
+                <header>
+                    <h3>Technology  form</h3>
+                </header>
+                <form>
+                    <fieldset>  
+                        <legend>Please enter your contact details</legend>
+                        <label for="name">
+                            Your name: <input type="text" name="name-txt" id="name" placeholder="your name" required />
+                            <abbr title="required name input" aria-label="required">*</abbr>
+                        </label>
+                        
+                        <label for="email">
+                            Email address: <input type="email" name="email-field" id="email" placeholder="youremail@example.com" required />
+                            <abbr title="required email input" aria-label="required">*</abbr>
+                        </label>
+        
+                        <label for="phonen">
+                            Phone number (+57): <input type="number" name="phonenumber" id="phonen" min="1" aria-label="your phone number +57 extension">
+                        </label>
+                    </fieldset>
+        
+                    <fieldset>
+                        <legend>Please select the courses that you are interested in <abbr title="required" aria-label="The courses you are interested to take">*</abbr></legend>
+        
+                        <label for="wd">
+                            <input type="checkbox" name="webdeveloper" id="wd" /> Web Developer
+                        </label>
+        
+                        <label for="rd">
+                            <input type="checkbox" name="reactdeveloper" id="rd" /> React Developer
+                        </label>
+        
+                        <label for="fs">
+                            <input type="checkbox" name="fullstack" id="fs" /> Fullstack Developer
+                        </label>
+        
+                        <label for="other">
+                            <input type="checkbox" name="other" id="other" /> Other
+                        </label>
+                    </fieldset>
+        
+                    <p>Please enter a message</p>
+                    <textarea name="textarea" id="texta" cols="60" rows="10" aria-label="optional message"></textarea>
+        
+                    <div>
+                        <button>Send message</button>
+                        <button type="reset">Reset form</button>
+                    </div>
+                </form>    
+                <footer>
+                    <p>
+                        <b>HTML</b> is the basic of web development, so it is very important to be <strong>semantically</strong> correct, with the right tags as well as <strong>accessibility</strong> for everyone on the web
+                        <br>
+                        References : <cite>Interneting is hard</cite> <br>
+                            <a href="https://www.internetingishard.com/html-and-css/semantic-html/" target="blank">Semantic HTML</a>
+                        <br> <br> <br>
+                        <i>This site was created </i>
+                        <time datetime="2020-05-02 16:00">2020-05-02 at 16:00</time>
+                    </p>
+                </footer>
+            </article>
+        </main>
+
+        <aside>
+            <iframe width="480" height="315" src="https://www.youtube.com/embed/z9_rdtdA2BQ" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
+            </iframe>
+        </aside>
+        
+        <hr>
+
+        <footer>
+            <p>author: augusticor</p>
+            <nav>
+                <figure>
+                    <img src="photo.jpg" alt="Mi profile picture" title="King Varian Wrynn">
+                    <figcaption>
+                        Footer of the page
+                    </figcaption>
+                </figure>
+            </nav>
+        </footer>
+
+    </body>
+</html>
